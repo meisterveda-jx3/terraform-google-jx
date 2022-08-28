@@ -6,6 +6,12 @@ variable "gcp_project" {
   type        = string
 }
 
+variable "gcp_credentials" {
+  type = string
+  sensitive = true
+  description = "Google Cloud service account credentials"
+}
+
 // ----------------------------------------------------------------------------
 // Optional Variables
 // ----------------------------------------------------------------------------
